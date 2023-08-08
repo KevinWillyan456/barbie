@@ -1,0 +1,13 @@
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .main-title {
+  color: #ec4399;
+  font-size: 2rem;
+  padding: 200px;
+  border: 5px solid #ec4399;
+  box-shadow: 0 0 20px #ec4399;
+}
