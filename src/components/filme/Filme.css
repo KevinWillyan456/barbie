@@ -1,5 +1,51 @@
 .filme-content {
-  min-width: 200px;
-  min-height: 300px;
-  background-color: red;
+  width: 80%;
+  background-color: #700e63;
+  margin: 0 auto 40px auto;
+}
+.filme-content .title {
+  color: white;
+  font-size: 28px;
+  width: 100%;
+  background-color: #921481;
+  padding: 10px;
+}
+.filme-content .box {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.filme-content .box .cover {
+  pointer-events: none;
+}
+.filme-content .box .cover img {
+  width: 200px;
+}
+.filme-content .box .wrap {
+  position: relative;
+  width: 100%;
+}
+.filme-content .box .wrap .release-year {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.filme-content .box .wrap .synopsis {
+  color: white;
+  font-size: 16px;
+}
+.filme-content .box .wrap .trailer {
+  transition: 200ms;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 18px;
+  background-color: #921481;
+  padding: 20px;
+  cursor: pointer;
+}
+.filme-content .box .wrap .trailer:hover {
+  background-color: #d104b6;
+  box-shadow: 0 0 20px #d104b6;
 }
