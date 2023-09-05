@@ -1,51 +1,86 @@
 .filme-content {
-  width: 80%;
+  width: 300px;
+  height: 637px;
+  flex-wrap: wrap;
   background-color: #700e63;
   margin: 0 auto 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
 }
 .filme-content .title {
   color: white;
-  font-size: 28px;
+  font-size: 20px;
   width: 100%;
   background-color: #921481;
   padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-.filme-content .box {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-.filme-content .box .cover {
+
+.filme-content .cover {
   pointer-events: none;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.filme-content .box .cover img {
-  width: 200px;
-}
-.filme-content .box .wrap {
-  position: relative;
+.filme-content .cover img {
   width: 100%;
 }
-.filme-content .box .wrap .release-year {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
+.filme-content .wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
-.filme-content .box .wrap .synopsis {
+.filme-content .wrap .release-year {
+  margin: 10px 0 10px 10px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 0 5px black;
+}
+.filme-content .wrap .synopsis {
   color: white;
   font-size: 16px;
+  padding: 0 10px 0 20px;
+  text-shadow: 0 0 5px black;
+  text-align: justify;
+  transform: translateX(-10px);
+  height: 160px;
+  overflow-y: auto;
 }
-.filme-content .box .wrap .trailer {
+.filme-content .wrap .synopsis::-webkit-scrollbar {
+  width: 10px;
+}
+
+.filme-content .wrap .synopsis::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 10px;
+}
+.filme-content .wrap .synopsis::-webkit-scrollbar-thumb {
+  background-color: #d104b6;
+  border-radius: 10px;
+}
+.filme-content .wrap .trailer {
   transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   font-size: 18px;
   background-color: #921481;
   padding: 20px;
   cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.filme-content .box .wrap .trailer:hover {
+.filme-content .wrap .trailer:hover {
   background-color: #d104b6;
   box-shadow: 0 0 20px #d104b6;
 }
