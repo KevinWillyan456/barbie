@@ -1,8 +1,8 @@
-import { SetStateAction, useState } from "react";
-import Filme from "../filme/Filme";
+import { SetStateAction, useEffect, useState } from "react";
+import Filme, { IData } from "../filme/Filme";
 import "./Main.css";
 
-const data = [
+const data: IData[] = [
   {
     id: 1,
     title: "Barbie",
@@ -61,10 +61,39 @@ const data = [
 
 const Main = () => {
   const [inputSearch, setInputSearch] = useState("");
+  const [filmes, setFilmes] = useState<IData[]>(data);
 
   const handleChange = (e: { target: { value: SetStateAction<string> } }) => {
     setInputSearch(e.target.value);
   };
+
+  useEffect(() => {
+    const dataSerched = data.filter((filme) => {
+      if (inputSearch === " ") {
+        return filme;
+      }
+      return filme.title.toLowerCase().includes(inputSearch.toLowerCase());
+    });
+
+    if (!dataSerched) {
+      return setFilmes(data);
+    }
+
+    dataSerched.sort((a, b) => {
+      const titleA = a.title.toUpperCase();
+      const titleB = b.title.toUpperCase();
+
+      if (titleA < titleB) {
+        return -1;
+      }
+      if (titleA > titleB) {
+        return 1;
+      }
+      return 0;
+    });
+
+    setFilmes(dataSerched);
+  }, [inputSearch]);
 
   return (
     <main className="main-container">
@@ -82,7 +111,7 @@ const Main = () => {
         </div>
       </div>
       <div className="main-content">
-        {data.map((item) => (
+        {filmes.map((item) => (
           <Filme key={item.id} data={item} />
         ))}
       </div>

@@ -1,6 +1,6 @@
 import "./Filme.css";
 
-interface IData {
+export interface IData {
   id: number;
   title: string;
   releaseYear: number;
