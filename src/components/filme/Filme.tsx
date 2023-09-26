@@ -1,12 +1,6 @@
+import { Link } from "react-router-dom";
+import { IData } from "../../App";
 import "./Filme.css";
-
-export interface IData {
-  id: number;
-  title: string;
-  releaseYear: number;
-  synopsis: string;
-  cover: string;
-}
 
 const Filme = ({ data }: { data: IData }) => {
   return (
@@ -18,9 +12,9 @@ const Filme = ({ data }: { data: IData }) => {
       <div className="wrap">
         <div className="release-year">{data.releaseYear}</div>
         <div className="synopsis">{data.synopsis}</div>
-        <a className="trailer" href="#">
+        <Link to={`/filme-ver-mais/${data.id}`} className="trailer">
           Ver Mais
-        </a>
+        </Link>
       </div>
     </div>
   );
