@@ -14,3 +14,19 @@
 .header .navbar li a:hover {
   background-color: #ff2796;
 }
+.header .navbar-mobile li a {
+  transition: 200ms;
+  background-color: #ec4399;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header .navbar-mobile li a:hover {
+  background-color: #ff2796;
+}

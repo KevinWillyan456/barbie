@@ -52,7 +52,7 @@
 }
 .voltar-ver-mais {
   width: 80%;
-  margin: 20px auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 .voltar-ver-mais a {
   transition: 200ms;
@@ -70,4 +70,10 @@
   color: white;
   background-color: #d104b6;
   box-shadow: 0 0 10px #d104b6;
+}
+@media (max-width: 600px) {
+  .filme-content-ver-mais .box {
+    flex-direction: column;
+    align-items: center;
+  }
 }

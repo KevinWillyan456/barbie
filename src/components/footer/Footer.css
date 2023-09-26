@@ -101,3 +101,21 @@
   gap: 6px;
   font-weight: bold;
 }
+@media (max-width: 1000px) {
+  .footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-container .footer-links ul {
+    align-items: center;
+  }
+  .footer .footer-bottom .copyright {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .footer .footer-bottom .wrap {
+    display: none;
+  }
+}
