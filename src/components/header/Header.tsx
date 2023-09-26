@@ -5,16 +5,18 @@ import logo from "/barbie-logo.png";
 const Header = () => {
   return (
     <header className="header">
-      <a href="#" className="logo">
-        <img src={logo} alt="React Logo" />
-      </a>
-      <ul className="navbar">
-        <ButtonForHeader>Ínicio</ButtonForHeader>
-        <ButtonForHeader>Loja</ButtonForHeader>
-        <ButtonForHeader>Comunidade</ButtonForHeader>
-        <ButtonForHeader>Blog</ButtonForHeader>
-        <ButtonForHeader>Sobre</ButtonForHeader>
-      </ul>
+      <div className="header-content">
+        <a href="/" className="logo">
+          <img src={logo} alt="React Logo" />
+        </a>
+        <ul className="navbar">
+          <ButtonForHeader url="/">Ínicio</ButtonForHeader>
+          <ButtonForHeader url="/">Loja</ButtonForHeader>
+          <ButtonForHeader url="/">Comunidade</ButtonForHeader>
+          <ButtonForHeader url="/">Blog</ButtonForHeader>
+          <ButtonForHeader url="/">Sobre</ButtonForHeader>
+        </ul>
+      </div>
     </header>
   );
 };

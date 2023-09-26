@@ -2,10 +2,10 @@ import { ReactNode } from "react";
 
 import "./ButtonForHeader.css";
 
-const ButtonForHeader = ({ children }: { children: ReactNode }) => {
+const ButtonForHeader = ({ children, url }: { children: ReactNode, url: string }) => {
   return (
     <li>
-      <a href="#">{children}</a>
+      <a href={url}>{children}</a>
     </li>
   );
 };

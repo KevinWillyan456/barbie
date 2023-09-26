@@ -19,7 +19,7 @@ const Filme = ({ data }: { data: IData }) => {
         <div className="release-year">{data.releaseYear}</div>
         <div className="synopsis">{data.synopsis}</div>
         <a className="trailer" href="#">
-          Assistir o Trailer
+          Ver Mais
         </a>
       </div>
     </div>
