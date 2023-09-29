@@ -1,96 +1,96 @@
 .filme-title-ver-mais-content {
-  width: 100%;
-  margin-top: 110px;
-  margin-bottom: 40px;
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 40px;
 }
 .filme-title-ver-mais-content .filme-title-ver-mais {
-  width: 80%;
-  color: white;
-  font-size: 1.5rem;
-  margin: 0 auto;
-  padding: 10px 16px;
-  border: 2px solid #ec4399;
-  box-shadow: 0 0 10px #ec4399;
+    width: 80%;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 10px 16px;
+    border: 2px solid #ec4399;
+    box-shadow: 0 0 10px #ec4399;
 }
 .filme-title-ver-mais-content .filme-title-ver-mais span {
-  color: #ec4399;
+    color: #ec4399;
 }
 .filme-content-ver-mais {
-  width: 80%;
-  height: auto;
-  background-color: #700e63;
-  margin: 20px auto;
+    width: 80%;
+    height: auto;
+    background-color: #700e63;
+    margin: 20px auto;
 }
 .filme-content-ver-mais .title {
-  color: white;
-  font-size: 28px;
-  width: 100%;
-  background-color: #921481;
-  padding: 10px;
+    color: white;
+    font-size: 28px;
+    width: 100%;
+    background-color: #921481;
+    padding: 10px;
 }
 .filme-content-ver-mais .box {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 .filme-content-ver-mais .box .cover {
-  pointer-events: none;
+    pointer-events: none;
 }
 .filme-content-ver-mais .box .cover img {
-  width: 200px;
+    width: 200px;
 }
 .filme-content-ver-mais .box .wrap {
-  position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
 }
 .filme-content-ver-mais .box .wrap .release-year {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 .filme-content-ver-mais .box .wrap .synopsis {
-  color: white;
-  font-size: 16px;
+    color: white;
+    font-size: 16px;
 }
 .filme-content-ver-mais .box .wrap .trailer {
-  transition: 200ms;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 18px;
-  background-color: #921481;
-  padding: 20px;
-  cursor: pointer;
+    transition: 200ms;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    background-color: #921481;
+    padding: 20px;
+    cursor: pointer;
 }
 .filme-content-ver-mais .box .wrap .trailer:hover {
-  background-color: #d104b6;
-  box-shadow: 0 0 20px #d104b6;
+    background-color: #d104b6;
+    box-shadow: 0 0 20px #d104b6;
 }
 .voltar-ver-mais {
-  width: 80%;
-  margin: 0px auto 0 auto;
+    width: 80%;
+    margin: 0px auto 0 auto;
 }
 .voltar-ver-mais a {
-  transition: 200ms;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #d104b6;
-  font-size: 22px;
-  border-radius: 10px;
-  border: 2px solid #d104b6;
-  width: 200px;
-  height: 60px;
+    transition: 200ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d104b6;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 2px solid #d104b6;
+    width: 200px;
+    height: 60px;
 }
 .voltar-ver-mais a:hover {
-  color: white;
-  background-color: #d104b6;
-  box-shadow: 0 0 10px #d104b6;
+    color: white;
+    background-color: #d104b6;
+    box-shadow: 0 0 10px #d104b6;
 }
 @media (max-width: 600px) {
-  .filme-content-ver-mais .box {
-    flex-direction: column;
-    align-items: center;
-  }
+    .filme-content-ver-mais .box {
+        flex-direction: column;
+        align-items: center;
+    }
 }

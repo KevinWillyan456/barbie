@@ -1,121 +1,121 @@
 .footer {
-  width: 100%;
-  background-color: #700e63;
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
+    width: 100%;
+    background-color: #700e63;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
 }
 
 .footer .footer-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  padding: 0 100px;
-  gap: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    padding: 0 100px;
+    gap: 40px;
 }
 
 .footer .footer-container .footer-logo {
-  cursor: pointer;
+    cursor: pointer;
 }
 .footer .footer-container .footer-logo img {
-  width: 100px;
+    width: 100px;
 }
 .footer .footer-container .footer-logo .greetings {
-  color: white;
-  font-size: 1rem;
-  margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 .footer .footer-container .footer-logo .social {
-  margin-top: 20px;
-  color: white;
-  font-size: 1.4rem;
-  display: flex;
-  gap: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 10px;
 }
 .footer .footer-container .footer-logo .social a {
-  display: flex;
-  transition: 200ms;
+    display: flex;
+    transition: 200ms;
 }
 .footer .footer-container .footer-logo .social a:hover {
-  color: #ec4399;
-  text-shadow: 0 0 5px #ec4399;
+    color: #ec4399;
+    text-shadow: 0 0 5px #ec4399;
 }
 .footer .footer-container .footer-logo .certificados {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .footer .footer-container .footer-logo .certificados img {
-  width: 100px;
-  height: 55px;
+    width: 100px;
+    height: 55px;
 }
 .footer .footer-container .footer-links {
-  color: white;
-  padding-top: 60px;
+    color: white;
+    padding-top: 60px;
 }
 .footer .footer-container .footer-links ul {
-  transition: 200ms;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    transition: 200ms;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .footer .footer-container .footer-links ul li a {
-  transition: 200ms;
+    transition: 200ms;
 }
 .footer .footer-container .footer-links ul li a:hover {
-  color: #ec4399;
-  text-shadow: 0 0 5px #ec4399;
+    color: #ec4399;
+    text-shadow: 0 0 5px #ec4399;
 }
 
 .footer .footer-bottom {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 100px;
-  color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 100px;
+    color: white;
 }
 
 .footer .footer-bottom .wrap {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 .footer .footer-bottom .wrap .terms {
-  transition: 200ms;
+    transition: 200ms;
 }
 .footer .footer-bottom .wrap .terms:hover {
-  color: #ec4399;
-  text-shadow: 0 0 5px #ec4399;
+    color: #ec4399;
+    text-shadow: 0 0 5px #ec4399;
 }
 .footer .footer-bottom .wrap .privacy-policy {
-  transition: 200ms;
+    transition: 200ms;
 }
 .footer .footer-bottom .wrap .privacy-policy:hover {
-  color: #ec4399;
-  text-shadow: 0 0 5px #ec4399;
+    color: #ec4399;
+    text-shadow: 0 0 5px #ec4399;
 }
 .footer .footer-bottom .wrap .language {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
 }
 @media (max-width: 1000px) {
-  .footer .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer .footer-container .footer-links ul {
-    align-items: center;
-  }
-  .footer .footer-bottom .copyright {
-    text-align: center;
-    margin-top: 40px;
-    width: 100%;
-  }
-  .footer .footer-bottom .wrap {
-    display: none;
-  }
+    .footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer-container .footer-links ul {
+        align-items: center;
+    }
+    .footer .footer-bottom .copyright {
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .footer .footer-bottom .wrap {
+        display: none;
+    }
 }

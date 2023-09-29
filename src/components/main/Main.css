@@ -1,56 +1,56 @@
 .main-container {
-  width: 80%;
-  margin: 110px auto 0 auto;
+    width: 80%;
+    margin: 110px auto 0 auto;
 }
 .main-container .search-container {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .main-container .search-container .search-input {
-  border: none;
-  font-size: 1.2rem;
-  color: #ec4399;
-  background-color: black;
-  padding: 10px 20px;
-  width: 100%;
-  outline: none;
-  margin-bottom: 10px;
+    border: none;
+    font-size: 1.2rem;
+    color: #ec4399;
+    background-color: black;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
 }
 .main-container .search-container .search-input::placeholder {
-  color: #c73983;
+    color: #c73983;
 }
 .main-container .search-container .search-result {
-  color: white;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .main-container .search-container .search-result span {
-  color: #ec4399;
-  font-size: 1.2rem;
+    color: #ec4399;
+    font-size: 1.2rem;
 }
 .main-container .main-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: space-between;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-between;
+    gap: 20px;
 }
 @media (max-width: 790px) {
-  .main-container .main-content {
-    justify-content: center;
-  }
+    .main-container .main-content {
+        justify-content: center;
+    }
 }
 
 .main-container .main-title {
-  color: #ec4399;
-  font-size: 2rem;
-  margin: 40px auto;
-  padding: 10px 16px;
-  border: 5px solid #ec4399;
-  box-shadow: 0 0 20px #ec4399;
+    color: #ec4399;
+    font-size: 2rem;
+    margin: 40px auto;
+    padding: 10px 16px;
+    border: 5px solid #ec4399;
+    box-shadow: 0 0 20px #ec4399;
 }
 @media (max-width: 800px) {
-  .main-container .main-title {
-    font-size: 1.6rem;
-    text-align: center;
-  }
+    .main-container .main-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
