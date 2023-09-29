@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IData } from "../../App";
+import { IData } from "../../main";
 import "./Filme.css";
 
 const Filme = ({ data }: { data: IData }) => {
