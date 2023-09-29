@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { IData } from "../App";
+import { IData } from "../main";
 
 const MyDataContext = createContext<IData[]>([]);
 
