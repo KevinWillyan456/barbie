@@ -2,6 +2,7 @@ import { SetStateAction, useContext, useEffect, useState } from "react";
 import Filme from "../filme/Filme";
 import "./Main.css";
 import { MyDataContext, IData } from "../../context/MyDataContext";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Main = () => {
     const [inputSearch, setInputSearch] = useState("");
@@ -50,14 +51,20 @@ const Main = () => {
                     className="search-input"
                     type="text"
                     placeholder="Pesquise por um filme..."
+                    value={inputSearch}
                     onChange={handleChange}
                 />
-                <div className="search-result">
-                    Pesquisado:{" "}
-                    <span>
-                        {inputSearch === "" ? "Sem resultados" : inputSearch}
-                    </span>
-                </div>
+                <AiOutlineClose
+                    className="search-clear"
+                    onClick={() => {
+                        setInputSearch("");
+                    }}
+                />
+                {inputSearch && (
+                    <div className="search-result">
+                        Pesquisado: <span>{inputSearch}</span>
+                    </div>
+                )}
             </div>
             <div className="main-content">
                 {filmes.map((item) => (

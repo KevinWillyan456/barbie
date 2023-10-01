@@ -45,6 +45,7 @@
     height: 100%;
 }
 .header .header-content .navbar-mobile {
+    animation: animation-navbar-mobile 200ms linear;
     position: absolute;
     top: calc(100% + 20px);
     right: 0;
@@ -57,6 +58,18 @@
     box-shadow: 0 0 5px black;
     color: white;
     list-style-type: none;
+}
+@keyframes animation-navbar-mobile {
+    from {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    to {
+        width: 188.08px;
+        height: 345px;
+        overflow: hidden;
+    }
 }
 @media (max-width: 1000px) {
     .header .header-content .navbar {

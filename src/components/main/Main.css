@@ -3,6 +3,7 @@
     margin: 110px auto 0 auto;
 }
 .main-container .search-container {
+    position: relative;
     margin-bottom: 20px;
 }
 .main-container .search-container .search-input {
@@ -10,13 +11,21 @@
     font-size: 1.2rem;
     color: #ec4399;
     background-color: black;
-    padding: 10px 20px;
+    padding: 10px 40px 10px 20px;
     width: 100%;
     outline: none;
     margin-bottom: 10px;
 }
 .main-container .search-container .search-input::placeholder {
     color: #c73983;
+}
+.main-container .search-container .search-clear {
+    color: #c73983;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    cursor: pointer;
+    font-weight: bold;
 }
 .main-container .search-container .search-result {
     color: white;
