@@ -14,7 +14,14 @@ function FilmeVerMais() {
     const filmeEncontrado = data.find((item) => item.id === numericId);
 
     if (filmeEncontrado === undefined) {
-        return;
+        return (
+            <div className="filme-undefined">
+                <div className="filme-undefined-content">
+                    Esse filme não existe
+                </div>
+                <Link to="/">Voltar</Link>
+            </div>
+        );
     }
 
     useEffect(() => {
