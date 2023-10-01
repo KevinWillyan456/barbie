@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
-import MyDataContext from "../context/MyDataContext";
 import { useContext, useEffect } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import "./FilmeVerMais.css";
+import { MyDataContext } from "../context/MyDataContext";
 
 function FilmeVerMais() {
     let { id } = useParams();

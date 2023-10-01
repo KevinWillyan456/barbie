@@ -1,8 +1,7 @@
 import { SetStateAction, useContext, useEffect, useState } from "react";
 import Filme from "../filme/Filme";
 import "./Main.css";
-import MyDataContext from "../../context/MyDataContext";
-import { IData } from "../../main";
+import { MyDataContext, IData } from "../../context/MyDataContext";
 
 const Main = () => {
     const [inputSearch, setInputSearch] = useState("");
