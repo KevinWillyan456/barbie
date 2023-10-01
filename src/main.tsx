@@ -5,11 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { MyDataContextProvider } from "./context/MyDataContext";
 import Home from "./pages/Home";
 import FilmeVerMais from "./pages/FilmeVerMais";
+import ErrorPage from "./pages/errorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
+        errorElement: <ErrorPage />,
     },
     {
         path: "filme-ver-mais/:id",
