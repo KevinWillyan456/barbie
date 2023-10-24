@@ -26,7 +26,6 @@ export function MyDataContextProvider({ children }: ProviderProps) {
         })
             .then((response) => {
                 setData(response.data.filmes);
-                console.log(response.data.filmes);
             })
             .catch((error) => {
                 console.error("Erro ao fazer a requisição:", error);
