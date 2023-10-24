@@ -18,7 +18,7 @@ const Main = () => {
             if (inputSearch === " ") {
                 return filme;
             }
-            return filme.title
+            return filme.titulo
                 .toLowerCase()
                 .includes(inputSearch.toLowerCase());
         });
@@ -28,8 +28,8 @@ const Main = () => {
         }
 
         dataSerched.sort((a, b) => {
-            const titleA = a.title.toUpperCase();
-            const titleB = b.title.toUpperCase();
+            const titleA = a.titulo.toUpperCase();
+            const titleB = b.titulo.toUpperCase();
 
             if (titleA < titleB) {
                 return -1;
@@ -41,7 +41,7 @@ const Main = () => {
         });
 
         setFilmes(dataSerched);
-    }, [inputSearch]);
+    }, [data, inputSearch]);
 
     return (
         <main className="main-container">
@@ -68,7 +68,7 @@ const Main = () => {
             </div>
             <div className="main-content">
                 {filmes.map((item) => (
-                    <Filme key={item.id} data={item} />
+                    <Filme key={item._id} data={item} />
                 ))}
             </div>
         </main>

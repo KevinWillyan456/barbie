@@ -1,17 +1,15 @@
 import { Link, useParams } from "react-router-dom";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import "./FilmeVerMais.css";
 import { MyDataContext } from "../context/MyDataContext";
 
 function FilmeVerMais() {
-    let { id } = useParams();
+    const { id } = useParams();
     const data = useContext(MyDataContext);
 
-    const numericId = id ? parseInt(id, 10) : undefined;
-
-    const filmeEncontrado = data.find((item) => item.id === numericId);
+    const filmeEncontrado = data.find((item) => item._id === id);
 
     if (filmeEncontrado === undefined) {
         return (
@@ -24,36 +22,34 @@ function FilmeVerMais() {
         );
     }
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    window.scrollTo(0, 0);
 
     return (
         <>
             <Header />
             <div className="filme-title-ver-mais-content">
                 <div className="filme-title-ver-mais">
-                    Veja mais de: <span>{filmeEncontrado.title}</span>
+                    Veja mais de: <span>{filmeEncontrado.titulo}</span>
                 </div>
             </div>
             <div className="voltar-ver-mais">
                 <Link to="/">Voltar</Link>
             </div>
             <div className="filme-content-ver-mais">
-                <div className="title">{filmeEncontrado.title}</div>
+                <div className="title">{filmeEncontrado.titulo}</div>
                 <div className="box">
                     <div className="cover">
                         <img
-                            src={filmeEncontrado.cover}
-                            alt={filmeEncontrado.title}
+                            src={filmeEncontrado.foto}
+                            alt={filmeEncontrado.titulo}
                         />
                     </div>
                     <div className="wrap">
                         <div className="release-year">
-                            {filmeEncontrado.releaseYear}
+                            {filmeEncontrado.anoLancamento}
                         </div>
                         <div className="synopsis">
-                            {filmeEncontrado.synopsis}
+                            {filmeEncontrado.sinopse}
                         </div>
                     </div>
                 </div>

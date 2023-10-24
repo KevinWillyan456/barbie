@@ -5,14 +5,14 @@ import "./Filme.css";
 const Filme = ({ data }: { data: IData }) => {
     return (
         <div className="filme-content">
-            <div className="title">{data.title}</div>
+            <div className="title">{data.titulo}</div>
             <div className="cover">
-                <img src={data.cover} alt={data.title} />
+                <img src={data.foto} alt={data.titulo} />
             </div>
             <div className="wrap">
-                <div className="release-year">{data.releaseYear}</div>
-                <div className="synopsis">{data.synopsis}</div>
-                <Link to={`/filme-ver-mais/${data.id}`} className="trailer">
+                <div className="release-year">{data.anoLancamento}</div>
+                <div className="synopsis">{data.sinopse}</div>
+                <Link to={`/filme-ver-mais/${data._id}`} className="trailer">
                     Ver Mais
                 </Link>
             </div>
