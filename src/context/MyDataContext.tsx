@@ -19,7 +19,7 @@ export function MyDataContextProvider({ children }: ProviderProps) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        api.get("/filme", {
+        api.get(`${import.meta.env.VITE_API_URL}/filme`, {
             headers: {
                 Authorization: import.meta.env.VITE_API_KEY,
             },
