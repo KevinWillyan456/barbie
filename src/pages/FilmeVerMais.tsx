@@ -53,6 +53,24 @@ function FilmeVerMais() {
                         </div>
                     </div>
                 </div>
+
+                {filmeEncontrado.trailer ? (
+                    <div className="trailer-container">
+                        <p className="trailer-info">Assista ao Trailer</p>
+                        <iframe
+                            className="trailer-content"
+                            width="560"
+                            height="315"
+                            src={`https://www.youtube.com/embed/${filmeEncontrado.trailer}`}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                ) : (
+                    <div className="trailer-message">Trailer indisponível</div>
+                )}
             </div>
             <Footer />
         </>

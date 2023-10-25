@@ -113,3 +113,27 @@
     border-radius: 10px;
     padding: 5px 10px;
 }
+.filme-content-ver-mais .trailer-message {
+    color: white;
+    background-color: #4a0a41;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.filme-content-ver-mais .trailer-container {
+    width: 100%;
+    background-color: #4a0a41;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+.filme-content-ver-mais .trailer-container .trailer-info {
+    color: white;
+    font-size: 22px;
+}
+.filme-content-ver-mais .trailer-container .trailer-content {
+    width: 100%;
+    max-width: 500px;
+}

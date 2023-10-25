@@ -5,8 +5,10 @@ export interface IData {
     _id: string;
     titulo: string;
     anoLancamento: number;
+    dataCriacao: Date;
     sinopse: string;
     foto: string;
+    trailer: string;
 }
 
 export const MyDataContext = createContext<IData[]>([]);
