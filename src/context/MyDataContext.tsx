@@ -11,14 +11,14 @@ export interface IData {
     trailer: string;
 }
 
-export const MyDataContext = createContext<IData[]>([]);
+export const MyDataContext = createContext<IData[] | null>([]);
 
 interface ProviderProps {
     children: React.ReactNode;
 }
 
 export function MyDataContextProvider({ children }: ProviderProps) {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<IData[] | null>([]);
 
     useEffect(() => {
         api.get(`${import.meta.env.VITE_API_URL}/filme`, {
@@ -30,6 +30,7 @@ export function MyDataContextProvider({ children }: ProviderProps) {
                 setData(response.data);
             })
             .catch((error) => {
+                setData(null);
                 console.error("Erro ao fazer a requisição:", error);
             });
     }, []);

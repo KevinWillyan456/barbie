@@ -3,17 +3,24 @@ import Filme from "../filme/Filme";
 import "./Main.css";
 import { MyDataContext, IData } from "../../context/MyDataContext";
 import { AiOutlineClose } from "react-icons/ai";
+import Loading from "../loading/Loading";
+import ErrorLoading from "../errorloading/ErrorLoading";
 
 const Main = () => {
     const [inputSearch, setInputSearch] = useState("");
     const data = useContext(MyDataContext);
-    const [filmes, setFilmes] = useState<IData[]>(data);
+    const [filmes, setFilmes] = useState<IData[]>(
+        () => data || ([] as IData[])
+    );
 
     const handleChange = (e: { target: { value: SetStateAction<string> } }) => {
         setInputSearch(e.target.value);
     };
 
     useEffect(() => {
+        if (!data) {
+            return;
+        }
         const dataSerched = data.filter((filme) => {
             if (inputSearch === " ") {
                 return filme;
@@ -67,9 +74,13 @@ const Main = () => {
                 )}
             </div>
             <div className="main-content">
-                {filmes.map((item) => (
-                    <Filme key={item._id} data={item} />
-                ))}
+                {data !== null && data.length > 0 ? (
+                    filmes.map((item) => <Filme key={item._id} data={item} />)
+                ) : data !== null && data.length === 0 ? (
+                    <Loading />
+                ) : (
+                    <ErrorLoading />
+                )}
             </div>
         </main>
     );

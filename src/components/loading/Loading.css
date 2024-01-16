@@ -1,0 +1,29 @@
+.loading {
+    animation: loading 1s ease-in-out alternate infinite;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    padding: 20px 0;
+    margin: 0 auto 40px auto;
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 0 10px #ec4399;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}

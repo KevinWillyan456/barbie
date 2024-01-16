@@ -9,7 +9,7 @@ function FilmeVerMais() {
     const { id } = useParams();
     const data = useContext(MyDataContext);
 
-    const filmeEncontrado = data.find((item) => item._id === id);
+    const filmeEncontrado = data?.find((item) => item._id === id);
 
     if (filmeEncontrado === undefined) {
         return (
